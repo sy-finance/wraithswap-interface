@@ -1,0 +1,30 @@
+{
+  "name": "WraithSwap Unsupported List",
+  "timestamp": "2021-01-05T20:47:02.923Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "ipfs://QmX4YqexRsESSEDSid94nc6GMrEkw7b78TpAZGz7z6PfMB",
+  "keywords": ["wraithswap", "default"],
+  "tokens": [
+    {
+      "name": "Unknown",
+      "address": "0x0c749474ecd356cb399d87eb60fd078368d24d4c",
+      "symbol": "UNK",
+      "decimals": 18,
+      "chainId": 1,
+      "logoURI": "https://cloudflare-ipfs.com/ipfs/QmX4YqexRsESSEDSid94nc6GMrEkw7b78TpAZGz7z6PfMB"
+    },
+    {
+      "name": "Sushi",
+      "address": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC",
+      "symbol": "SUSHI",
+      "decimals": 18,
+      "chainId": 250,
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/sushi.jpg"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "WraithSwap List",
+  "timestamp": "2021-01-05T20:47:02.923Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "ipfs://QmX4YqexRsESSEDSid94nc6GMrEkw7b78TpAZGz7z6PfMB",
+  "keywords": ["wraithswap", "default"],
+  "tokens": [
+    {
+      "name": "Wraith",
+      "address": "0x4CF098d3775Bd78a4508a13E126798Da5911b6cd",
+      "symbol": "WRA",
+      "decimals": 18,
+      "chainId": 250,
+      "logoURI": "ipfs://QmX4YqexRsESSEDSid94nc6GMrEkw7b78TpAZGz7z6PfMB"
+    },
+    {
+      "name": "Syfin",
+      "address": "0x1BCF4DC879979C68fA255f731FE8Dcf71970c9bC",
+      "symbol": "SYF",
+      "decimals": 18,
+      "chainId": 250,
+      "logoURI": "https://sy.finance/img/icon-blk.png"
+    },
+    {
+      "name": "USD Coin",
+      "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+      "symbol": "USDC",
+      "decimals": 6,
+      "chainId": 250,
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/usdc.jpg"
+    },
+    {
+      "name": "Wrapped Fantom",
+      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+      "symbol": "WFTM",
+      "decimals": 18,
+      "chainId": 250,
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/ftm.jpg"
+    }
+  ]
+}

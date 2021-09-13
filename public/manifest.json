@@ -1,0 +1,23 @@
+{
+  "name": "WraithSwap",
+  "short_name": "WraithSwap",
+  "lang": "en",
+  "description": "Swap, yield, lend, borrow, leverage, limit, launch all on one community driven ecosystem",
+  "background_color": "#150404",
+  "theme_color": "#F338C3",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "splash_pages": null,
+  "prefer_related_applications": false,
+  "iconPath": "wraithcoin.png",
+  "icons": [
+    {
+      "src": "/wraithcoin.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
