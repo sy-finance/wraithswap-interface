@@ -89,6 +89,14 @@ function AppBar(): JSX.Element {
                           NFTs 🡕
                         </a>
                       </NavLink>
+                      <NavLink href="https://fields.wraithswap.finance">
+                        <a
+                          id={`nft-nav-link`}
+                          className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
+                        >
+                          Fields 🡕
+                        </a>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
@@ -322,7 +330,14 @@ function AppBar(): JSX.Element {
                     NFTs 🡕
                   </a>
                 </Link>
-
+                <Link href={'https://fields.wraithswap.finance'}>
+                  <a
+                    id={`migrate-nav-link`}
+                    className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
+                  >
+                    Fields 🡕
+                  </a>
+                </Link>
                 {/* {chainId && featureEnabled(Feature.LIQUIDITY_MINING, chainId) && (
                   <Link href={'/farm'}>
                     <a
