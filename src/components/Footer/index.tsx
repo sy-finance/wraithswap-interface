@@ -14,9 +14,9 @@ const Footer = () => {
     <footer className="flex-shrink-0 w-full">
       <div className="flex items-center justify-between h-20 px-4">
         {chainId && chainId in ANALYTICS_URL && (
-          <ExternalLink id={`analytics-nav-link`} href={'#'} className="text-low-emphesis">
+          <ExternalLink id={`analytics-nav-link`} href={'https://info.wraithswap.finance'} className="text-low-emphesis">
             <div className="flex items-center space-x-2">
-              <div>Analytics (Soon)</div>
+              <div>Analytics</div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6"

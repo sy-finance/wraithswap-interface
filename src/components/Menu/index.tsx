@@ -25,9 +25,9 @@ const items = (i18n: I18n) => [
     href: 'https://syfinance.gitbook.io/sy-finance/',
   },
   {
-    name: 'Analytics (Soon)',
+    name: 'Analytics',
     description: 'Analytics for Wraithswap',
-    href: '#',
+    href: 'https://info.wraithswap.finance',
   },
   {
     name: 'Fantom Opera',
