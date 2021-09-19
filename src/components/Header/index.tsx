@@ -97,6 +97,14 @@ function AppBar(): JSX.Element {
                           Fields 🡕
                         </a>
                       </NavLink>
+                      <NavLink href="https://vote.wraithswap.finance">
+                        <a
+                          id={`nft-nav-link`}
+                          className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
+                        >
+                          Vote 🡕
+                        </a>
+                      </NavLink>
                     </div>
                   </div>
                 </div>

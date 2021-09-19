@@ -110,9 +110,13 @@ const syflogo = 'https://sy.finance/img/icon-blk.png'
 
 const ftmlogo = 'https://cloudflare-ipfs.com/ipfs/QmRJgxRqXUpHeskg48qeehUK97FzCAY7espZhTAVdrh9B9'
 
-const wftmlogo = 'https://cloudflare-ipfs.com/ipfs/QmRJgxRqXUpHeskg48qeehUK97FzCAY7espZhTAVdrh9B9'
+const wftmlogo = 'https://cloudflare-ipfs.com/ipfs/QmQTWE7DDGzPutQg3jgJKm8oy9qwnnWxJsxXRcpaUPgDE4'
 
 const usdclogo = 'https://cloudflare-ipfs.com/ipfs/QmYD5pwxPxBHT7pubcMGsw6XEPNS9Q62YGE4sK2XqFoqPR'
+
+const usdtlogo = 'https://assets.coingecko.com/coins/images/325/large/Tether-logo.png'
+
+const boologo = 'https://assets.spookyswap.finance/tokens/BOO.png'
 
 const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
   currency,
@@ -159,6 +163,14 @@ const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
 
   if (currency.symbol === 'USDC') {
     return <img src={usdclogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'fUSDT') {
+    return <img src={usdtlogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'BOO') {
+    return <img src={boologo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
   }
 
   if (currency.symbol === 'WRA') {
