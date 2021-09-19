@@ -54,11 +54,11 @@ module.exports = withBundleAnalyzer(
     reactStrictMode: true,
     async redirects() {
       return [
-        // {
-        //   source: '/',
-        //   destination: '/swap',
-        //   permanent: true,
-        // },
+        {
+          source: '/',
+          destination: '/swap',
+          permanent: true,
+        },
 
         {
           source: '/zap',
