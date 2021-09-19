@@ -31,6 +31,11 @@ const items = (i18n: I18n) => [
     href: 'https://info.wraithswap.finance',
   },
   {
+    name: 'Voting',
+    description: 'Voting on WRA and SYF proposals',
+    href: 'https://snapshot.org/#/wraithswap.eth',
+  },
+  {
     name: 'Fantom Opera',
     description: 'Learn more about the Fantom Network.',
     href: 'https://fantom.foundation',
