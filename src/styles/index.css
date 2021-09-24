@@ -103,6 +103,20 @@ input:focus {
   --tw-gradient-to: #8A1310 !important;
 }
 
+*::-webkit-scrollbar {
+  width: 9px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: #2A0E10;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #EA0F02;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #EA0F02;  /* creates padding around scroll thumb */
+}
+
 /* *::-webkit-scrollbar {
   width: var(--scrollbar-width);
 }
