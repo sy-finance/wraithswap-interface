@@ -41,6 +41,14 @@
       "decimals": 18,
       "chainId": 250,
       "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/ftm.jpg"
+    },
+    {
+      "name": "Chainlink",
+      "address": "0xb3654dc3d10ea7645f8319668e8f54d2574fbdc8",
+      "symbol": "LINK",
+      "decimals": 18,
+      "chainId": 250,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo.png"
     }
   ]
 }

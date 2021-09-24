@@ -118,6 +118,8 @@ const usdtlogo = 'https://assets.coingecko.com/coins/images/325/large/Tether-log
 
 const boologo = 'https://assets.spookyswap.finance/tokens/BOO.png'
 
+const linklogo = 'https://cloudflare-ipfs.com/ipfs/QmUdtBEt4zaex8NYA5St9iSdnq6JKtJw2ArHpyr49W4XuL'
+
 const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
   currency,
   size = '24px',
@@ -175,6 +177,10 @@ const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
 
   if (currency.symbol === 'WRA') {
     return <img src={wralogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'LINK') {
+    return <img src={linklogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
   }
 
   if (currency.symbol === 'SYF') {

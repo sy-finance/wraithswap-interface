@@ -140,7 +140,9 @@ export default function Pool() {
             </>
           ) : (
             <Empty className="flex text-lg text-center text-low-emphesis">
-              <div className="px-4 py-2">{i18n._(t`No liquidity was found. `)}</div>
+              <div className="px-4 py-2">
+                No liquidity was found. It will not show here, if it is in use in the Fields!
+              </div>
             </Empty>
           )}
           <div className={classNames('grid gap-4', migrationSupported ? 'grid-cols-3' : 'grid-cols-2')}>
@@ -155,7 +157,6 @@ export default function Pool() {
             <Button id="add-pool-button" color="gray" onClick={() => router.push(`/find`)}>
               {i18n._(t`Import`)}
             </Button>
-
             {migrationSupported && (
               <Button id="create-pool-button" color="gray" onClick={() => router.push(`/migrate`)}>
                 {i18n._(t`Migrate`)}

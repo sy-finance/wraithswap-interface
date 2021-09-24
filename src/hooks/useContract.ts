@@ -56,6 +56,9 @@ import TIMELOCK_ABI from '../constants/abis/timelock.json'
 import UNI_FACTORY_ABI from '../constants/abis/uniswap-v2-factory.json'
 import WETH9_ABI from '../constants/abis/weth.json'
 import ZENKO_ABI from '../constants/abis/zenko.json'
+import DASHBOARD_ABI from '../constants/abis/dashboard.json'
+import SUSHIROLL_ABI from '../constants/abis/SushiRoll.json'
+import SPOOKYFACTORY_ABI from '../constants/abis/SpookyFactory.json'
 import { getContract } from '../functions/contract'
 import { useActiveWeb3React } from './useActiveWeb3React'
 import { useMemo } from 'react'
@@ -99,6 +102,61 @@ export function useArgentWalletDetectorContract(): Contract | null {
   )
 }
 
+export function useDashboardContract(): Contract | null {
+  const { chainId } = useActiveWeb3React()
+  let address: string | undefined
+  if (chainId) {
+    switch (chainId) {
+      case ChainId.MAINNET:
+        address = '0xD132Ce8eA8865348Ac25E416d95ab1Ba84D216AF'
+        break
+      case ChainId.FANTOM:
+        address = '0x148dDE6e5411F801f046128BB78b819c2222E399'
+        break
+      case ChainId.ROPSTEN:
+        address = '0xC95678C10CB8b3305b694FF4bfC14CDB8aD3AB35'
+        break
+      case ChainId.BSC:
+        address = '0xCFbc963f223e39727e7d4075b759E97035457b48'
+        break
+    }
+  }
+  return useContract(address, DASHBOARD_ABI, false)
+}
+
+export function useQuickSwapFactoryContract(): Contract | null {
+  return useContract('0xF491e7B69E4244ad4002BC14e878a34207E38c29', SPOOKYFACTORY_ABI, false)
+}
+
+export function useSushiRollContract(version: 'v1' | 'v2' = 'v2'): Contract | null {
+  const { chainId } = useActiveWeb3React()
+  let address: string | undefined
+  if (chainId) {
+    switch (chainId) {
+      case ChainId.MAINNET:
+        address = '0x16E58463eb9792Bc236d8860F5BC69A81E26E32B'
+        break
+      case ChainId.ROPSTEN:
+        address = '0xCaAbdD9Cf4b61813D4a52f980d6BC1B713FE66F5'
+        break
+      case ChainId.BSC:
+        if (version === 'v1') {
+          address = '0x677978dE066b3f5414eeA56644d9fCa3c75482a1'
+        } else if (version === 'v2') {
+          address = '0x2DD1aB1956BeD7C2d938d0d7378C22Fd01135a5e'
+        }
+        break
+      case ChainId.MATIC:
+        address = '0x0053957E18A0994D3526Cf879A4cA7Be88e8936A'
+        break
+      case ChainId.FANTOM:
+        address = '0x451Df64bc5B2A201669fAaB9439DE273A89b39C6'
+        break
+    }
+  }
+  return useContract(address, SUSHIROLL_ABI, true)
+}
+
 export function useENSRegistrarContract(withSignerIfPossible?: boolean): Contract | null {
   const { chainId } = useActiveWeb3React()
   return useContract(chainId && ENS_REGISTRAR_ADDRESS[chainId], ENS_ABI, withSignerIfPossible)
@@ -123,7 +181,7 @@ export function useMerkleDistributorContract(): Contract | null {
 
 export function useBoringHelperContract(): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useContract(chainId && BORING_HELPER_ADDRESS[chainId], BORING_HELPER_ABI, false)
+  return useContract('0x5fEF34D72cb339C745DAd208dc969cEe9E48C8dD', BORING_HELPER_ABI, false)
 }
 
 export function useMulticall2Contract() {

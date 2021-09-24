@@ -306,6 +306,7 @@ const useGetTVL = () => {
           const balBOO = await contractftm.methods.balanceOf('0x36041D7F9639d954899315C11A997d9Cd5Ef4b8b').call()
           const balUSDCWRA = await contractftm.methods.balanceOf('0x6a80BD3eb550adcfF4f2f5f12a1bB213c1Ef57fA').call()
           const balSYFUSDC = await contractftm.methods.balanceOf('0x6B16f1E86a44368D0A88737dAA51DFe180c77Caa').call()
+          // const balWRASYF = await contractftm.methods.balanceOf('0xf209a5666d6c17b4aa994798c8f4de6ce76114bb').call()
 
           if (balWRAFTMlp > 0) {
             var combine = 0
@@ -317,7 +318,7 @@ const useGetTVL = () => {
             combine += balUSDCWRA / 1e18
             combine += balSYFUSDC / 1e18
 
-            console.log(combine)
+            // console.log(combine)
             const totalliquidity = combine * ftmprice * 2
 
             setData(totalliquidity.toLocaleString('en-US', { maximumFractionDigits: 0 }))
@@ -330,7 +331,7 @@ const useGetTVL = () => {
             combine += balUSDCWRA / 1e18
             combine += balSYFUSDC / 1e18
 
-            console.log(combine)
+            // console.log(combine)
             const totalliquidity = combine * ftmprice * 2
 
             setData(totalliquidity.toLocaleString('en-US', { maximumFractionDigits: 0 }))

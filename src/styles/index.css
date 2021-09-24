@@ -48,6 +48,20 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 9px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #2A0E10;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #EA0F02;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #EA0F02;  /* creates padding around scroll thumb */
+}
+
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -79,6 +93,10 @@ input:focus {
 
 .bg-red {
   background-color: #8A1310 !important;
+}
+
+.bg-purple {
+  background-color: #80000063 !important;
 }
 
 .to-red {

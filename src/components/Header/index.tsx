@@ -86,7 +86,7 @@ function AppBar(): JSX.Element {
                           id={`nft-nav-link`}
                           className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
                         >
-                          NFTs 🡕
+                          NFTs ↗
                         </a>
                       </NavLink>
                       <NavLink href="https://fields.wraithswap.finance">
@@ -94,7 +94,7 @@ function AppBar(): JSX.Element {
                           id={`nft-nav-link`}
                           className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
                         >
-                          Fields 🡕
+                          Fields ↗
                         </a>
                       </NavLink>
                       <NavLink href="https://vote.wraithswap.finance">
@@ -102,7 +102,7 @@ function AppBar(): JSX.Element {
                           id={`nft-nav-link`}
                           className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
                         >
-                          Vote 🡕
+                          Vote ↗
                         </a>
                       </NavLink>
                     </div>
@@ -335,7 +335,7 @@ function AppBar(): JSX.Element {
                     id={`migrate-nav-link`}
                     className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
                   >
-                    NFTs 🡕
+                    NFTs ↗
                   </a>
                 </Link>
                 <Link href={'https://fields.wraithswap.finance'}>
@@ -343,7 +343,15 @@ function AppBar(): JSX.Element {
                     id={`migrate-nav-link`}
                     className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
                   >
-                    Fields 🡕
+                    Fields ↗
+                  </a>
+                </Link>
+                <Link href={'https://vote.wraithswap.finance'}>
+                  <a
+                    id={`migrate-nav-link`}
+                    className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
+                  >
+                    Vote ↗
                   </a>
                 </Link>
                 {/* {chainId && featureEnabled(Feature.LIQUIDITY_MINING, chainId) && (
