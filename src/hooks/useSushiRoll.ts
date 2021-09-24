@@ -2,6 +2,7 @@ import { ChainId } from '@sushiswap/sdk'
 import LPToken from '../types/LPToken'
 import ReactGA from 'react-ga'
 import { ethers } from 'ethers'
+import { BigNumber, BigNumberish } from '@ethersproject/bignumber'
 import { signERC2612Permit } from 'eth-permit'
 import { useActiveWeb3React } from '../hooks/useActiveWeb3React'
 import { useCallback } from 'react'
@@ -23,7 +24,7 @@ const useSushiRoll = (version: 'v1' | 'v2' = 'v2') => {
   }
 
   const migrate = useCallback(
-    async (lpToken: LPToken, amount: ethers.BigNumber) => {
+    async (lpToken: LPToken, amount: BigNumber) => {
       if (sushiRoll) {
         const deadline = Math.floor(new Date().getTime() / 1000) + ttl
         const args = [
@@ -53,7 +54,7 @@ const useSushiRoll = (version: 'v1' | 'v2' = 'v2') => {
   )
 
   const migrateWithPermit = useCallback(
-    async (lpToken: LPToken, amount: ethers.BigNumber) => {
+    async (lpToken: LPToken, amount: BigNumber) => {
       if (account && sushiRoll) {
         const deadline = Math.floor(new Date().getTime() / 1000) + ttl
         const permit = await signERC2612Permit(
