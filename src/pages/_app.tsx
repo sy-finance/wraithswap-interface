@@ -141,10 +141,12 @@ function MyApp({
           name="twitter:description"
           content="WraithSwap, AMM ERC20 token swapping platform on the Fantom Network by Sy.finance"
         />
+        <meta key="twitter:image" name="twitter:image" content="/wraithswaplive.png" />
         <meta key="twitter:creator" name="twitter:creator" content="@WraithSwap" />
         <meta key="og:type" property="og:type" content="website" />
         <meta key="og:site_name" property="og:site_name" content="WraithSwap App" />
         <meta key="og:url" property="og:url" content="https://wraithswap.finance" />
+        <meta key="og:image" property="og:image" content="/wraithswaplive.png" />
         <meta
           key="og:description"
           property="og:description"
