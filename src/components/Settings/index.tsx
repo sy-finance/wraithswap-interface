@@ -93,14 +93,14 @@ export default function SettingsTab({ placeholderSlippage }: { placeholderSlippa
             <div className="flex items-center justify-between">
               <div className="flex items-center">
                 <Typography variant="sm" className="text-primary">
-                  {i18n._(t`Disable Multihops`)}
+                  Enable Multihops
                 </Typography>
                 <QuestionHelper text={i18n._(t`Restricts swaps to direct pairs only.`)} />
               </div>
               <Toggle
                 id="toggle-disable-multihop-button"
-                isActive={singleHopOnly}
-                toggle={() => (singleHopOnly ? setSingleHopOnly(false) : setSingleHopOnly(true))}
+                isActive={!singleHopOnly}
+                toggle={() => (!singleHopOnly ? setSingleHopOnly(true) : setSingleHopOnly(false))}
               />
             </div>
             {/* {chainId == ChainId.MAINNET && (

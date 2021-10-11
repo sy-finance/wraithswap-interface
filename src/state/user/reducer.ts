@@ -74,7 +74,7 @@ export const initialState: UserState = {
   userDarkMode: null,
   matchesDarkMode: false,
   userExpertMode: false,
-  userSingleHopOnly: false,
+  userSingleHopOnly: true,
   userSlippageTolerance: INITIAL_ALLOWED_SLIPPAGE,
   userDeadline: DEFAULT_DEADLINE_FROM_NOW,
   tokens: {},

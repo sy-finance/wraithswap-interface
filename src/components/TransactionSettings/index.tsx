@@ -96,10 +96,32 @@ export default function TransactionSettings({ placeholderSlippage }: Transaction
 
           <QuestionHelper
             text={i18n._(
-              t`Your transaction will revert 23if the price changes unfavorably by more than this percentage.`
+              t`Your transaction will revert if the price changes unfavorably by more than this percentage.`
             )}
           />
         </div>
+        <Button
+          size="sm"
+          color={slippageInput === '7' ? 'blue' : 'gray'}
+          variant={slippageInput === '7' ? 'filled' : 'outlined'}
+          onClick={() => {
+            setSlippageInput('')
+            parseSlippageInput('7')
+          }}
+        >
+          WRA 7%
+        </Button>
+        <Button
+          size="sm"
+          color={slippageInput === '10' ? 'blue' : 'gray'}
+          variant={slippageInput === '10' ? 'filled' : 'outlined'}
+          onClick={() => {
+            setSlippageInput('')
+            parseSlippageInput('10')
+          }}
+        >
+          SYF 10%
+        </Button>
         <div className="flex items-center space-x-2">
           <div
             className={classNames(
@@ -115,11 +137,11 @@ export default function TransactionSettings({ placeholderSlippage }: Transaction
             tabIndex={-1}
           >
             <div className="flex items-center justify-between gap-1">
-              {tooLow || tooHigh ? (
+              {/* {tooLow || tooHigh ? (
                 <span className="hidden sm:inline text-yellow" role="img" aria-label="warning">
                   ⚠️
                 </span>
-              ) : null}
+              ) : null} */}
               <input
                 className={classNames(slippageError ? 'text-red' : '', 'bg-transparent placeholder-low-emphesis')}
                 placeholder={placeholderSlippage?.toFixed(2)}

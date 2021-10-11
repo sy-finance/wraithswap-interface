@@ -652,7 +652,7 @@ export default function Swap() {
                 ) : routeNotFound && userHasSpecifiedInputOutput ? (
                   <div style={{ textAlign: 'center' }}>
                     <div className="mb-1">{i18n._(t`Insufficient liquidity for this trade`)}</div>
-                    {singleHopOnly && <div className="mb-1">{i18n._(t`Try enabling multi-hop trades`)}</div>}
+                    {!singleHopOnly && <div className="mb-1">{i18n._(t`Try enabling multi-hop trades`)}</div>}
                   </div>
                 ) : showApproveFlow ? (
                   <div>
