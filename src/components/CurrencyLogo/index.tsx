@@ -118,6 +118,22 @@ const usdtlogo = 'https://assets.coingecko.com/coins/images/325/large/Tether-log
 
 const boologo = 'https://assets.spookyswap.finance/tokens/BOO.png'
 
+const dailogo = 'https://assets.spookyswap.finance/tokens/DAI.png'
+
+const crvlogo = 'https://assets.spookyswap.finance/tokens/CRV.png'
+
+const fusdlogo = 'https://assets.spookyswap.finance/tokens/fUSD.png'
+
+const wbtclogo = 'https://assets.spookyswap.finance/tokens/wBTC.png'
+
+const wethlogo = 'https://assets.spookyswap.finance/tokens/wETH.png'
+
+const yfilogo = 'https://assets.spookyswap.finance/tokens/YFI.png'
+
+const elitelogo = 'https://assets.spookyswap.finance/tokens/ELITE.png'
+
+const geistlogo = 'https://assets.spookyswap.finance/tokens/GEIST.png'
+
 const linklogo = 'https://cloudflare-ipfs.com/ipfs/QmUdtBEt4zaex8NYA5St9iSdnq6JKtJw2ArHpyr49W4XuL'
 
 const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
@@ -185,6 +201,38 @@ const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
 
   if (currency.symbol === 'SYF') {
     return <img src={syflogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'CRV') {
+    return <img src={crvlogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'DAI') {
+    return <img src={dailogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'fUSD') {
+    return <img src={fusdlogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'WBTC') {
+    return <img src={wbtclogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'WETH') {
+    return <img src={wethlogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'YFI') {
+    return <img src={yfilogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'ELITE') {
+    return <img src={elitelogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'GEIST') {
+    return <img src={geistlogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
   }
 
   return <Logo srcs={srcs} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />

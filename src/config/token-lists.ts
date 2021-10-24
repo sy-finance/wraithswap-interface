@@ -6,7 +6,7 @@ const BA_LIST = 'https://raw.githubusercontent.com/The-Blockchain-Association/se
  */
 export const UNSUPPORTED_LIST_URLS: string[] = [BA_LIST]
 
-const WRAITHLIST = 'https://cloudflare-ipfs.com/ipfs/QmVmrhAwSG6vLrNu4r1PssBGHHL48CCWi4Znma9yuctZNJ'
+const WRAITHLIST = 'https://cloudflare-ipfs.com/ipfs/QmRzysfWHTXEWJeUSwsZ2TFRCp7umTCaAZQo5ozor1mLPL'
 
 // lower index == higher priority for token import
 export const DEFAULT_LIST_OF_LISTS: string[] = [

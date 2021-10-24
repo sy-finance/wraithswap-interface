@@ -38,7 +38,7 @@ function Manage({
         onBack={() => setModalView(CurrencyModalView.search)}
       />
       <div className="flex p-1 rounded bg-dark-800">
-        {[i18n._(t`Lists`), i18n._(t`Tokens`)].map((title, i) => (
+        {[i18n._(t`Tokens`)].map((title, i) => (
           <div
             className={classNames(
               tabIndex === i && 'bg-dark-900 text-high-emphesis',
@@ -51,7 +51,7 @@ function Manage({
         ))}
       </div>
       <div className="h-screen">
-        {tabIndex === 0 && (
+        {/* {tabIndex === 1 && (
           <AutoSizer disableWidth>
             {({ height }) => (
               <ManageLists
@@ -62,8 +62,8 @@ function Manage({
               />
             )}
           </AutoSizer>
-        )}
-        {tabIndex === 1 && <ManageTokens setModalView={setModalView} setImportToken={setImportToken} />}
+        )} */}
+        {tabIndex === 0 && <ManageTokens setModalView={setModalView} setImportToken={setImportToken} />}
       </div>
     </div>
   )

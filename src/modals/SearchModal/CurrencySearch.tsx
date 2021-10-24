@@ -227,9 +227,9 @@ export function CurrencySearch({
       )}
       {allowManageTokenList && (
         <div className="mt-3">
-          {/* <Button id="list-token-manage-button" onClick={showManageView} color="gray">
-            {i18n._(t`Manage Token Lists`)}
-          </Button> */}
+          <Button id="list-token-manage-button" onClick={showManageView} color="gray">
+            Manage Tokens
+          </Button>
         </div>
       )}
     </div>

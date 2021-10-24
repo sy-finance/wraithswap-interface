@@ -49,6 +49,22 @@
       "decimals": 18,
       "chainId": 250,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo.png"
+    },
+    {
+      "name": "Elite",
+      "address": "0xf43Cc235E686d7BC513F53Fbffb61F760c3a1882",
+      "symbol": "ELITE",
+      "decimals": 18,
+      "chainId": 250,
+      "logoURI": "https://assets.spookyswap.finance/tokens/ELITE.png"
+    },
+    {
+      "name": "Geist",
+      "address": "0xd8321AA83Fb0a4ECd6348D4577431310A6E0814d",
+      "symbol": "GEIST",
+      "decimals": 18,
+      "chainId": 250,
+      "logoURI": "https://assets.spookyswap.finance/tokens/GEIST.png"
     }
   ]
 }
