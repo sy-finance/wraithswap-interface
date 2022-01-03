@@ -136,6 +136,8 @@ const geistlogo = 'https://assets.spookyswap.finance/tokens/GEIST.png'
 
 const linklogo = 'https://cloudflare-ipfs.com/ipfs/QmUdtBEt4zaex8NYA5St9iSdnq6JKtJw2ArHpyr49W4XuL'
 
+const mimlogo = 'https://abracadabra.money/img/Token_MIM.12c48248.svg'
+
 const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
   currency,
   size = '24px',
@@ -201,6 +203,10 @@ const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
 
   if (currency.symbol === 'SYF') {
     return <img src={syflogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
+  }
+
+  if (currency.symbol === 'MIM') {
+    return <img src={mimlogo} width={size} height={size} alt={currency?.symbol} className={className} {...rest} />
   }
 
   if (currency.symbol === 'CRV') {

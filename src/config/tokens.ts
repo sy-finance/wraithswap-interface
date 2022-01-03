@@ -36,6 +36,7 @@ export const FANTOM: { [key: string]: Token } = {
   WETH: new Token(ChainId.FANTOM, '0x74b23882a30290451A17c44f4F05243b6b58C76d', 18, 'WETH', 'Wrapped Ether'),
   WRA: new Token(ChainId.FANTOM, '0x4CF098d3775Bd78a4508a13E126798Da5911b6cd', 18, 'WRA', 'Wraith'),
   SYF: new Token(ChainId.FANTOM, '0x1BCF4DC879979C68fA255f731FE8Dcf71970c9bC', 18, 'SYF', 'Syfin'),
+  MIM: new Token(ChainId.FANTOM, '0x82f0B8B456c1A451378467398982d4834b6829c1', 18, 'MIM', 'Magic Internet Money'),
 }
 
 export const MATIC: { [key: string]: Token } = {
