@@ -38,6 +38,8 @@ export const FANTOM: { [key: string]: Token } = {
   SYF: new Token(ChainId.FANTOM, '0x1BCF4DC879979C68fA255f731FE8Dcf71970c9bC', 18, 'SYF', 'Syfin'),
   MIM: new Token(ChainId.FANTOM, '0x82f0B8B456c1A451378467398982d4834b6829c1', 18, 'MIM', 'Magic Internet Money'),
   BOO: new Token(ChainId.FANTOM, '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE', 18, 'BOO', 'Spookyswap BOO'),
+  TOMB: new Token(ChainId.FANTOM, '0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7', 18, 'TOMB', 'Tomb'),
+  TSHARE: new Token(ChainId.FANTOM, '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37', 18, 'TSHARE', 'TShare'),
 }
 
 export const MATIC: { [key: string]: Token } = {
