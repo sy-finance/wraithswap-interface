@@ -27,6 +27,14 @@
       "logoURI": "https://sy.finance/img/icon-blk.png"
     },
     {
+      "name": "Spookyswap",
+      "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
+      "symbol": "BOO",
+      "decimals": 18,
+      "chainId": 250,
+      "logoURI": "https://assets.spookyswap.finance/tokens/BOO.png"
+    },
+    {
       "name": "USD Coin",
       "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
       "symbol": "USDC",
