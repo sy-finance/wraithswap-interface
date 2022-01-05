@@ -91,6 +91,14 @@
       "logoURI": "https://tomb.finance/static/media/crypto_tomb_share.bf1a6c52.svg"
     },
     {
+      "name": "Abracadabra",
+      "address": "0x468003B688943977e6130F4F68F23aad939a1040",
+      "symbol": "SPELL",
+      "decimals": 18,
+      "chainId": 250,
+      "logoURI": "https://assets.spookyswap.finance/tokens/SPELL.png"
+    },
+    {
       "name": "Geist",
       "address": "0xd8321AA83Fb0a4ECd6348D4577431310A6E0814d",
       "symbol": "GEIST",

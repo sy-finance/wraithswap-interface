@@ -40,6 +40,7 @@ export const FANTOM: { [key: string]: Token } = {
   BOO: new Token(ChainId.FANTOM, '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE', 18, 'BOO', 'Spookyswap BOO'),
   TOMB: new Token(ChainId.FANTOM, '0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7', 18, 'TOMB', 'Tomb'),
   TSHARE: new Token(ChainId.FANTOM, '0x4cdF39285D7Ca8eB3f090fDA0C069ba5F4145B37', 18, 'TSHARE', 'TShare'),
+  SPELL: new Token(ChainId.FANTOM, '0x468003B688943977e6130F4F68F23aad939a1040', 18, 'SPELL', 'Spell'),
 }
 
 export const MATIC: { [key: string]: Token } = {
