@@ -80,7 +80,7 @@
       "symbol": "TOMB",
       "decimals": 18,
       "chainId": 250,
-      "logoURI": "https://tomb.finance/static/media/crypto_tomb_cash.f2b44ef4.svg"
+      "logoURI": "https://assets.spookyswap.finance/tokens/TOMB.png"
     },
     {
       "name": "TShare",
@@ -88,7 +88,7 @@
       "symbol": "TSHARE",
       "decimals": 18,
       "chainId": 250,
-      "logoURI": "https://tomb.finance/static/media/crypto_tomb_share.bf1a6c52.svg"
+      "logoURI": "https://assets.spookyswap.finance/tokens/TSHARE.png"
     },
     {
       "name": "Abracadabra",
